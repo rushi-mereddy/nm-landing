@@ -167,6 +167,19 @@ p {
 
 
 
+/* TImeline and tabs start */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #2f4556;
+}
+
+.nav-link{
+  color: #304443;
+}
+/* TImeline and tabs end */
+
+
+
 
 
 
@@ -177,6 +190,8 @@ p {
 
 .faqs {
   text-align: center;
+  background-color: #30444309;
+
   /* padding: 50px 0px */
     /* background: #F7F7F7; */
     /* margin-top: -100px; */
@@ -184,7 +199,7 @@ p {
 
 
 .accordion {
-  background: #ffffff;
+  background: #ffffff00;
   color: #35475C;
   /* font-family: 'Open Sans'; */
   cursor: pointer;
@@ -204,7 +219,7 @@ p {
 .accordion:after {
   content: '\002B';
   /* Unicode character for "plus" sign (+) */
-  color: #35475C;
+  color: #35475c00;
   float: right;
   margin-top: -5px;
   font-size: 25px;
@@ -224,7 +239,7 @@ p {
 .panel {
   padding: 0 18px;
   text-align: left;
-  background: #ffffff;
+  background: #ffffff00;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
