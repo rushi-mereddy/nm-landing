@@ -1,0 +1,374 @@
+/* Common start */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.auto-padding{
+    padding: 50px 0px 50px 0px;
+}
+
+.head {
+  font-size: 35px;
+  color: #304443;
+  font-weight: 700;
+  text-transform: capitalize;
+  max-width: 80%;
+  /* margin: auto; */
+  margin-bottom: 8px;
+}
+
+.sub-head {
+  font-size: 20px;
+  color: #304443;
+  font-weight: 500;
+}
+
+p {
+  color: #304443;
+}
+
+.body-text {
+  font-size: 1rem;
+}
+
+.no-pc {
+  display: none;
+}
+
+
+
+/* text animation */
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 0.5s ease-in;
+}
+
+.active.fade-left {
+  animation: fade-left 0.5s ease-in;
+}
+
+.active.fade-right {
+  animation: fade-right 0.5s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Common end */
+
+/* Banner start */
+.banner{
+    height: 100vh;
+    background: linear-gradient(90deg, #304443 41%, rgb(56 73 90 / 52%) 100%), url('assets/businessman-pointing-his-presentation-futuristic-digital-screen.jpg');
+    background-size: contain;
+    background-position: right;
+}
+.logos{
+  padding: 30px;
+}
+
+.logos>img{
+  width: 6em;
+  margin-left: 20px;
+}
+
+.logos>.nm-logo{
+  background-color: #ffffff;
+
+}
+
+.main-head {
+  font-size: 43px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 3em;
+  text-transform: capitalize;
+  max-width: 20em;
+}
+
+.main-sub-head {
+  font-size: 25px;
+  /* font-weight: bold; */
+  text-transform: capitalize;
+  color: #132356;
+}
+/* Banner end */
+
+/* Program Overview start */
+.po{
+
+}
+/* Program Overview end */
+
+/* Program Highlights start */
+.ph{
+    background-color: #30444309;
+}
+/* Program Highlights end */
+
+/* Program flow start */
+.pf{
+
+}
+/* Program flow end */
+
+/* Student journey start */
+.sj{
+    background-color: #30444309;
+}
+/* Student journey end */
+
+
+
+
+
+
+
+
+
+
+/* FAQ'S */
+
+.faqs {
+  text-align: center;
+  /* padding: 50px 0px */
+    /* background: #F7F7F7; */
+    /* margin-top: -100px; */
+}
+
+
+.accordion {
+  background: #ffffff;
+  color: #35475C;
+  /* font-family: 'Open Sans'; */
+  cursor: pointer;
+  padding-left: 18px;
+  padding-top: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.4s;
+  border-top: 1px solid #A1A9B2;
+}
+
+.accordion:after {
+  content: '\002B';
+  /* Unicode character for "plus" sign (+) */
+  color: #35475C;
+  float: right;
+  margin-top: -5px;
+  font-size: 25px;
+}
+
+.accordion:hover::after {
+  color: #5D98AA;
+}
+
+.faq-active:after {
+  content: "\2212";
+  /* Unicode character for "minus" sign (-) */
+  font-size: 25px;
+  color: #35475C;
+}
+
+.panel {
+  padding: 0 18px;
+  text-align: left;
+  background: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  /* font-family: 'Open Sans'; */
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #35475C;
+  opacity: 0.7;
+}
+
+/* FAQ'S end */
+
+
+/* Footer */
+.footer {
+  padding: 0px 0px 20px 0px;
+  background-color: #304443;
+}
+
+
+/* .footer{
+  background-color: #EFEFEF;
+} */
+
+.footer-header{
+  /* font-family: 'Open Sans'; */
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-text{
+  /* font-family: 'Open Sans'; */
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-align: left;
+  margin-top: 20px;
+  text-decoration: none;
+
+}
+
+.footer-text ul{
+  list-style-type: none;
+}
+
+.footer-text a{
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.footer-text li::before {
+  content: '';
+  margin-left: -30px;
+}
+
+.footer-text a:hover{
+  text-decoration: none;
+  color: #6986b1;
+}
+
+.social-media-icons{
+  margin-left: -30px;
+  width: 20vw;
+}
+
+
+.social-media-icons i{
+  font-size: 1.4rem;
+  color: #c7c7c7;
+}
+
+.social-media-icons i:hover{
+  color: #ffffff;
+}
+
+.footer-logo{
+  /* font-family: 'Open Sans'; */
+  font-weight: 400;
+  font-size: 9px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-top: -5px;
+}
+
+/* .sub-footer-mid{
+ justify-content: center;
+ align-items: center;
+ margin-top: -5px;
+} */
+
+.sub-footer-text{
+  /* font-family: 'Open Sans'; */
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 170%;
+  text-transform: capitalize;
+  color: #ffffff !important;
+  text-align: center;
+  margin-top: -35px;
+  /* padding-bottom: 10px; */
+  text-decoration: none;
+
+}
+
+.sub-footer-text a{
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.sub-footer-text a:hover{
+  text-decoration: none;
+  color: #e2efff;
+}
+
+.footer-mobile{
+  display: none;
+}
+
+.only-for-mobile{
+  display: none;
+}
+
+
+
+
+
+  
+
+@media screen and (max-width: 770px){
+  
+
+  .footer-pc{
+      display: none !important;
+  }
+
+  .footer-mobile{
+      display: block;
+  }
+
+}
+
